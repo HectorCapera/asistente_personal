@@ -1,0 +1,8 @@
+CREATE DATABASE brujula
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+CREATE USER 'brujula_app'@'localhost' IDENTIFIED BY 'CAMBIAR_ESTA_CLAVE';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX ON brujula.* TO 'brujula_app'@'localhost';
+FLUSH PRIVILEGES;
+n
